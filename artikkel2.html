@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aare Kodumajutus - Hinnakiri</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <style>
+        .map-container {
+            text-align: center;
+            margin: 0 auto;
+            width: 60%;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -32,53 +39,58 @@
             font-weight: bold;
             font-size: large;
         }
+
         nav a {
             color: #000;
             text-decoration: none;
             margin: 0 10px;
             text-align: center;
         }
+
         section {
             padding: 20px;
             text-align: center;
             font-family: Arial, sans-serif;
         }
+
         footer {
             text-align: center;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
-        th, td {
+
+        th,
+        td {
             padding: 10px;
             border-bottom: 1px solid #ddd;
             text-align: left;
         }
+
         th {
             background-color: #f2f2f2;
         }
 
-        .login-container {
-            max-width: 400px;
-            margin: auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        iframe {
+            margin-bottom: 10px;
+        }
+
+        aside {
+            text-align: center;
         }
     </style>
-    </style>
 </head>
+
 <body>
     <header>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto" style="width: fit-content;">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -106,33 +118,41 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="login-container">
-                    <h2 class="text-center mb-4">Login</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter username">
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter password">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="remember">
-                            <label class="form-check-label" for="remember">Remember me</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Login</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel est non purus lacinia congue sit amet vel
+            est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras venenatis
+            lacus nec lacus dapibus, ac varius odio pharetra. Nullam quis metus nec tortor viverra feugiat a at nulla.
+            Integer tempus ultrices mauris quis consectetur. Proin vitae tortor eget turpis suscipit facilisis.</p>
+        <p>Sed gravida dolor vel turpis ullamcorper eleifend. Praesent fermentum ipsum nec odio convallis rhoncus. Fusce
+            elementum efficitur ex vitae convallis. Duis elementum velit vitae turpis vestibulum tristique. Vivamus
+            tempor urna ut vestibulum feugiat. Aliquam erat volutpat. Vivamus eget posuere lacus, et mattis orci.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel est non purus lacinia congue sit amet vel
+            est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras venenatis
+            lacus nec lacus dapibus, ac varius odio pharetra. Nullam quis metus nec tortor viverra feugiat a at nulla.
+            Integer tempus ultrices mauris quis consectetur. Proin vitae tortor eget turpis suscipit facilisis.</p>
+        <p>Sed gravida dolor vel turpis ullamcorper eleifend. Praesent fermentum ipsum nec odio convallis rhoncus. Fusce
+             elementum efficitur ex vitae convallis. Duis elementum velit vitae turpis vestibulum tristique. Vivamus
+            tempor urna ut vestibulum feugiat. Aliquam erat volutpat. Vivamus eget posuere lacus, et mattis orci.</p>
+        
+    </section>
 
+    <aside >
+        <h2>Varasemad artiklid</h2>
+        <ul style="list-style-type: none;;" >
+            <li><a href="artikkel1.html">Artikkel 1</a></li>
+            <li><a href="artikkel2.html">Artikkel 2</a></li>
+            <li><a href="artikkel3.html">Artikkel 3</a></li>
+            <li><a href="artikkel4.html">Artikkel 4</a></li>
+            <li><a href="artikkel5.html">Artikkel 5</a></li>
+        </ul>
+    </aside>
     <footer>
         <p>&copy; 2024 Aare Kodumajutus. All rights reserved.</p>
     </footer>
+
+
+
+
 </body>
+
 </html>
